@@ -1,0 +1,247 @@
+body {
+  color: #404040;
+  font: 100 1em/150% "proxima-nova", Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Basic Grid Styles*/
+.Grid {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.Grid-cell {
+  flex: 1;
+}
+
+.Demo {
+  padding: .8em 1em 0;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+}
+.Demo:after {
+  content: "";
+  display: block;
+  margin-top: .8em;
+  height: 1px;
+}
+#demotext {
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+}
+.footertext{
+  font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+div.Grid.Grid--gutters.Grid--cols-2.u-textCenter
+{
+  padding-left: 50px;
+}
+.footerlogo{
+  font-weight: 500;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.Demo.Holly {
+  background: rgba(102, 51, 255, 0.1);
+}
+.Demo.Holly:hover {
+  background: rgba(102, 51, 255, 0.25);
+}
+
+/* With gutters*/
+.Grid--gutters {
+  margin-left: -1em;
+}
+.Grid--gutters .Grid-cell {
+  padding-left: 1em;
+}
+.Grid--gutters .Grid--nested .Grid-cell:first-of-type .Demo {
+  margin-right: 1em;
+}
+
+/* Justify per row*/
+.Grid--right {
+  justify-content: flex-end;
+}
+
+.Grid--center {
+  justify-content: center;
+}
+
+/* Alignment per row */
+.Grid--top {
+  align-items: flex-start;
+}
+
+.Grid--bottom {
+  align-items: flex-end;
+}
+
+.Grid--center {
+  align-items: center;
+}
+
+/* Alignment per cell */
+.Grid-cell--top {
+  align-self: flex-start;
+}
+
+.Grid-cell--bottom {
+  align-self: flex-end;
+}
+
+.Grid-cell--center {
+  align-self: center;
+}
+
+/*===========================================*/
+/* Base classes for all media - Mobile first */
+.Grid--cols-2 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-3 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-4 > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+.Grid--cols-6 > .Grid-cell {
+  flex: 0 0 calc(50% - 1em);
+}
+
+.Grid--cols-12 > .Grid-cell {
+  flex: 0 0 calc(33.3333% - 1em);
+}
+
+.Grid--holly-grail .aside, .Grid--holly-grail .main {
+  flex: 1 100%;
+}
+
+/* One of -- columns*/
+.Grid--1of2 > .Grid-cell,
+.Grid--1of4 > .Grid-cell:first-of-type,
+.Grid--1of3 > .Grid-cell:first-of-type {
+  flex: 0 0 100%;
+}
+
+.Grid--1of6 > .Grid-cell:first-of-type {
+  flex: 0 0 50%;
+}
+
+.Grid--fit > .Grid-cell {
+  flex: 1;
+}
+
+.Grid--full > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+/* Tablet (medium) screens */
+@media (min-width: 30em) {
+  .Grid--cols-4 > .Grid-cell {
+    flex: 0 0 calc(50% - 1em);
+  }
+
+  .Grid--cols-6 > .Grid-cell {
+    flex: 0 0 calc(33.3333% - 1em);
+  }
+
+  .Grid--cols-12 > .Grid-cell {
+    flex: 0 0 calc(16.6666% - 1em);
+  }
+
+  .Grid--holly-grail .aside {
+    flex: 1 calc(25% - 1em);
+  }
+
+  .Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+
+  .Grid--1of6 > .Grid-cell:first-of-type {
+    flex: 0 0 30%;
+  }
+
+  .Grid--1of4 > .Grid-cell:first-of-type {
+    flex: 0 0 50%;
+  }
+
+  .Grid--1of3 > .Grid-cell:first-of-type {
+    flex: 0 0 100%;
+  }
+}
+/* Large screens */
+@media (min-width: 48em) {
+  .Grid--cols-2 > .Grid-cell,
+  .Grid--cols-3 > .Grid-cell,
+  .Grid--cols-4 > .Grid-cell,
+  .Grid--cols-6 > .Grid-cell,
+  .Grid--cols-12 > .Grid-cell {
+    flex: 1;
+  }
+
+  .Grid--holly-grail .main {
+    flex: 2;
+  }
+  .Grid--holly-grail .aside {
+    flex: 1;
+  }
+  .Grid--holly-grail .aside-1 {
+    order: 1;
+  }
+  .Grid--holly-grail .main {
+    order: 2;
+  }
+  .Grid--holly-grail .aside-2 {
+    order: 3;
+  }
+
+  .Grid--1of2 > .Grid-cell {
+    flex: 0 0 50%;
+  }
+
+  .Grid--1of6 > .Grid-cell:first-of-type {
+    flex: 0 0 16.6666%;
+  }
+
+  .Grid--1of4 > .Grid-cell:first-of-type {
+    flex: 0 0 25%;
+  }
+
+  .Grid--1of3 > .Grid-cell:first-of-type {
+    flex: 0 0 30%;
+  }
+
+  .Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
+    margin-right: 0;
+  }
+}

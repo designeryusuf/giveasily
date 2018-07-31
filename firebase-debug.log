@@ -1,0 +1,26 @@
+[debug] [2018-07-02T11:43:00.164Z] ----------------------------------------------------------------------
+[debug] [2018-07-02T11:43:00.185Z] Command:       /home/yusuf/.nvm/versions/node/v8.11.2/bin/node /home/yusuf/.nvm/versions/node/v8.11.2/bin/firebase serve
+[debug] [2018-07-02T11:43:00.187Z] CLI Version:   3.19.1
+[debug] [2018-07-02T11:43:00.188Z] Platform:      linux
+[debug] [2018-07-02T11:43:00.188Z] Node Version:  v8.11.2
+[debug] [2018-07-02T11:43:00.206Z] Time:          Mon Jul 02 2018 12:43:00 GMT+0100 (WAT)
+[debug] [2018-07-02T11:43:00.207Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-02T11:43:00.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-02T11:43:00.373Z] > authorizing via signed-in user
+[debug] [2018-07-02T11:43:00.394Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-02T11:43:00.396Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/CvKwB1RAU41D5KF_nXZ9RTVKSiXS59hxZw-Jjl2mlM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jul 02 2018 12:43:00 GMT+0100 (WAT)
+[debug] [2018-07-02T11:43:32.759Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-02T11:43:32.827Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gwap-eb9b4  
+  
+ Mon Jul 02 2018 12:43:32 GMT+0100 (WAT)
+[debug] [2018-07-02T11:44:20.881Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-02T11:44:20.887Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gwap-eb9b4/tokens  
+  
+ Mon Jul 02 2018 12:44:20 GMT+0100 (WAT)

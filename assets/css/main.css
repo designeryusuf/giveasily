@@ -98,11 +98,11 @@ p {
   font-size: 14px;
 }
 
-@media screen and (max-width: 600px) {ul, ol {
-  list-style-image: url('../img/bulletsmd.png'); 
+ul, ol {
+  list-style: none;
   margin: 0;
   padding: 0;
-}}
+}
 
  ol li {
   list-style: none;

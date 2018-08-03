@@ -34,10 +34,6 @@
 	max-width: 1200px;
 }
 
-footer {
-	border-top: 1px solid rgba(0, 36, 64, 0.1); 
-	padding-top: 30px;
-}
 
 .bg-ants {
   background-image: url("../images/stars2.svg");
